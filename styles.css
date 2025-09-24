@@ -1,0 +1,151 @@
+/* --------------------- */
+/* Estilos generales      */
+/* --------------------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 70px;
+
+  /* Fondo moderno y visible */
+  background: radial-gradient(circle at top left, #c1f0c1 10%, #ffffff, #ff7f7f 98%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #333;
+}
+
+/* Efecto de brillo sutil en la parte superior */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at top, rgba(255,255,255,0.2), transparent 70%);
+  pointer-events: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+h2 {
+  margin: 1px;
+}
+
+/* --------------------- */
+/* Bandera               */
+/* --------------------- */
+.bandera {
+  display: flex;
+  width: 700px;
+  max-width: 90%;
+  height: 350px;
+  margin: 0 auto 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.franja {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+/* Verde sólido */
+.verde {
+  background: #00AA00; /* verde más vibrante */
+}
+
+/* Blanca central */
+.blanco {
+  background: #fff;
+  position: relative;
+}
+
+/* Rojo degradado */
+.rojo {
+  background: linear-gradient(to bottom, #9D0000, #FF4C4C);
+  transition: background 0.3s ease;
+}
+
+/* --------------------- */
+/* Escudo                */
+/* --------------------- */
+.escudo {
+  width: 150px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.escudo:hover {
+  transform: scale(1.1);
+}
+
+/* --------------------- */
+/* Controles de sliders   */
+/* --------------------- */
+.controles {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 6px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #064420;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #cac6c8;
+}
+
+/* --------------------- */
+/* Footer                */
+/* --------------------- */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}

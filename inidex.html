@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Bandera de México</h1>
+
+  <div class="bandera">
+    <div class="franja verde" id="franjaVerde"></div>
+    <div class="franja blanco">
+      <img 
+        src="https://www.pnguniverse.com/wp-content/uploads/2020/09/Escudo-de-Mexico-1008x1024.png" 
+        alt="Escudo Nacional de México" 
+        class="escudo"
+      >
+    </div>
+    <div class="franja rojo" id="franjaRoja"></div>
+  </div>
+
+  <div class="controles">
+    <div class="control">
+      <label for="verde">Verde</label>
+      <input type="range" id="verde" min="68" max="255" value="153">
+      <div id="verdeHex">#009900</div>
+    </div>
+
+    <div class="control">
+      <label for="rojo">Rojo</label>
+      <input type="range" id="rojo" min="68" max="255" value="157">
+      <div id="rojoHex">#9D0000</div>
+    </div>
+  </div>
+
+  <footer>
+    <h2>Dominguez Hernández Regina 23200829</h2>
+    <h2>Gallegos Hernández 23200836</h2>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
