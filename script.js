@@ -26,6 +26,7 @@ function actualizarColores() {
   rojoHex.textContent = colorRojo;
 }
 
+
 verdeSlider.addEventListener("input", actualizarColores);
 rojoSlider.addEventListener("input", actualizarColores);
 

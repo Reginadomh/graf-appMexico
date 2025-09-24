@@ -16,6 +16,7 @@ body {
   color: #333;
 }
 
+
 /* Efecto de brillo sutil en la parte superior */
 body::before {
   content: '';
